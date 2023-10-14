@@ -1,0 +1,47 @@
+.footer__bottom {
+    display: flex;
+    align-items: flex-start;
+    gap: 210px;
+
+    &__header {
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        /* 50px */
+    }
+}
+
+.pages__contacts__header {
+    color: #292F36;
+
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.footer__bottom__text {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
+}
+
+.pages__contacts__text {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 300%;
+    /* 66px */
+    letter-spacing: 0.22px;
+}
