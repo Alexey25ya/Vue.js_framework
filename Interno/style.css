@@ -475,4 +475,11 @@ a {
   position: absolute;
   top: 25%;
   left: 30%;
+  color: #292F36;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
