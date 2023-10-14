@@ -1,0 +1,143 @@
+.blog__top__content {
+    background: url('img/blog_background.jpg')lightgray 50% / cover no-repeat;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 96px;
+
+    &__box {
+        display: flex;
+        width: 503px;
+        padding: 41px 78px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 37px 37px 0px 0px;
+        background: #FFF;
+
+        &__header {
+            color: #292F36;
+            font-family: DM Serif Display;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+        }
+
+        &__text {
+            color: #4D5053;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+        }
+    }
+}
+
+.blog__mid__content__header {
+    margin-bottom: 27px;
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 1px;
+}
+
+.blog__mid__content__box {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 65px;
+
+    &__img {
+        border-radius: 50px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &__header {
+            color: #292F36;
+            font-family: DM Serif Display;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+            letter-spacing: 0.5px;
+        }
+
+        &__text {
+            color: #4D5053;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+        }
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__text {
+                color: #4D5053;
+                font-family: Jost;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: 0.16px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+
+
+.blog__bottom__content__header {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 62.5px */
+    letter-spacing: 1px;
+}
+
+.blog__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pagination {
+    margin: 51px auto 100px;
+    display: flex;
+    width: max-content;
+    gap: 20px;
+}
+
+.pagination li {
+    display: inline;
+    position: relative;
+}
+
+.pagination__number {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
