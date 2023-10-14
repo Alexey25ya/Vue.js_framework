@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+</head>
+Вы разрабатываете приложение для отображения и сортировки списка товаров. У вас есть массив объектов products, где
+каждый объект представляет товар с его названием и ценой. Вам необходимо отобразить список товаров и предоставить
+пользователю возможность сортировать товары по цене (по возрастанию и по убыванию).
+
+<body>
+    <div class="block" id="app">
+        <button @click="sortArrByPriceIncrease()">Сортировать по возрастанию</button>
+        <button @click="sortArrByPriceDecrease()">Сортировать по убыванию</button>
+        <div class="products" v-for="product in products" :key="product.id">
+            <h2>{{ product.name }} - {{ product.price }}</h2>
+
+        </div>
+
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                products: [
+                    {
+                        id: 0,
+                        name: 'молоко',
+                        price: 50
+                    },
+                    {
+                        id: 1,
+                        name: 'мясо',
+                        price: 20
+                    },
+                    {
+                        id: 2,
+                        name: 'рыба',
+                        price: 30
+                    },
+                    {
+                        id: 3,
+                        name: 'сок',
+                        price: 40
+
+                    },]
+            },
+            methods: {
+
+            },
+            computed: {
+                sortArrByPriceIncrease() {
+                    return this.products.sort((a, b) => a.price > b.price ? 1 : -1)
+
+                },
+                sortArrByPriceDecrease() {
+                    return this.products.sort((a, b) => a.price < b.price ? 1 : -1)
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
