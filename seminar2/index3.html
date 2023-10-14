@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    Вы разрабатываете приложение для создания списка покупок. У вас есть массив объектов items, где каждый объект
+    представляет товар с его названием и количеством. Вам необходимо отобразить список товаров, предоставить возможность
+    изменять количество каждого товара и отмечать товары, которые уже куплены.
+
+    <div id="app">
+        <div class="products">
+            <div class="product" v-for="item in items" :key="item.id">
+                <input type="checkbox" name="Куплено" id="" v-model="item.isBuy">
+                <input type="number" name="Ввести количество" id="" v-model.number="item.count">
+                <span>{{ item.name }}</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                items: [
+                    {
+                        id: 0,
+                        name: 'молоко',
+                        count: 10,
+                        isBuy: false
+                    },
+                    {
+                        id: 2,
+                        name: 'мясо',
+                        count: 40,
+                        isBuy: false
+                    },
+                    {
+                        id: 1,
+                        name: 'рыба',
+                        count: 30,
+                        isBuy: false
+                    },
+                    {
+                        id: 3,
+                        name: 'сок',
+                        count: 20,
+                        isBuy: false
+                    },
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

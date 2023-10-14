@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    Вы разрабатываете простое приложение для отображения списка пользователей. У вас есть массив объектов users, где
+    каждый объект представляет одного пользователя с его именем и возрастом. Вам необходимо отобразить каждого
+    пользователя из массива в виде списка на странице.
+
+    <div id="app">
+        <div v-for="{id, name, surname, age} in users" :key="id">
+            <p>user name: {{ name }}</p>
+            <p>user surname: {{ surname }}</p>
+            <p>user age: {{ age }}</p>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                users: [
+                    {
+                        id: 0,
+                        name: 'Vasya',
+                        age: 20,
+                        surname: 'Vasiliev'
+                    },
+                    {
+                        id: 1,
+                        name: 'Petya',
+                        age: 25,
+                        surname: 'Petrikin'
+                    },
+                    {
+                        id: 2,
+                        name: 'Sasha',
+                        age: 10,
+                        surname: 'Sasko'
+                    },
+                    {
+                        id: 3,
+                        name: 'Pasha',
+                        age: 30,
+                        surname: 'Pavlik'
+                    }
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

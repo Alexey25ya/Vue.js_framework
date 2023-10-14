@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    Вы разрабатываете приложение для управления списком контактов. У вас есть форма с полями "Имя", "Фамилия" и "Email",
+    где пользователь может вводить информацию о новом контакте. После добавления контакта он должен отображаться в
+    списке контактов. Требуется связать форму с данными и отображать список контактов на странице.
+
+    <div id="app">
+        <input type="number" name="Ввести количество" id="" v-model.number="newProduct.count">
+        <input type="text" name="Ввести название" id="" v-model.number="newProduct.name">
+        <button @click="addProduct">Добавить товар</button>
+        <div class="products">
+            <div class="product" v-for="item in items" :key="item.id">
+                <input type="checkbox" name="Куплено" id="" v-model="item.isBuy">
+                <input type="number" name="Ввести количество" id="" v-model.number="item.count">
+                <span>{{ item.name }}</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                newProduct: {
+                    id: 0,
+                    name: '',
+                    count: 0,
+                    isBuy: false
+                },
+                items: [
+                    {
+                        id: 0,
+                        name: 'молоко',
+                        count: 10,
+                        isBuy: false
+                    },
+                    {
+                        id: 2,
+                        name: 'мясо',
+                        count: 40,
+                        isBuy: false
+                    },
+                    {
+                        id: 1,
+                        name: 'рыба',
+                        count: 30,
+                        isBuy: false
+                    },
+                    {
+                        id: 3,
+                        name: 'сок',
+                        count: 20,
+                        isBuy: false
+                    },
+                ]
+            },
+            methods: {
+                addProduct() {
+                    this.newProduct.id = Date.now();
+                    this.items.push(
+                        {
+                            ...this.newProduct
+                        }
+                    )
+                    this.newProduct = {
+                        id: 0,
+                        name: '',
+                        count: 0,
+                        isBuy: false
+                    }
+                }
+            },
+        });
+    </script>
+</body>
+
+</html>
