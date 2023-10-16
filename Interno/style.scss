@@ -247,7 +247,6 @@ a {
 .footer__mid {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 96px;
 }
 
 .design__card {
@@ -288,3 +287,4 @@ a {
 
 @import "footer";
 @import "blog";
+@import "blogDetails";
