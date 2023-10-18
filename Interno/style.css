@@ -556,6 +556,8 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-bottom: 130px;
 }
 .blogDetails__mid__content__right__quotes__header {
@@ -626,4 +628,9 @@ a {
   line-height: 125%;
   /* 22.5px */
   letter-spacing: 0.36px;
+}
+.blogDetails__mid__content__left__button:hover {
+  color: #FFF;
+  background: #292F36;
+  transition: background 0.2s;
 }/*# sourceMappingURL=style.css.map */
