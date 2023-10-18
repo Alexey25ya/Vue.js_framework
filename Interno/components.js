@@ -5,14 +5,7 @@ Vue.component('change-Kitchen', {
     template: `
     
     <div>
-    <div class="blogDetails__mid__content__right__datelinks">
-    <p class="blogDetails__mid__content__right__datelinks__date">26 December,2022</p>
-    <ul class="blogDetails__mid__content__right__datelinks__links">
-        <li><a href="#">Interior</a></li>
-        <li><a href="main.html">Home</a></li>
-        <li><a href="#">Decore</a></li>
-    </ul>
-</div>
+    
 <p class="blogDetails__mid__content__right__text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem
     vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of
     Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or
