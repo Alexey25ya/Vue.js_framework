@@ -633,4 +633,41 @@ a {
   color: #FFF;
   background: #292F36;
   transition: background 0.2s;
+}
+
+.project__top__content {
+  background: url("img/project_backround.jpg") lightgray 50%/cover no-repeat;
+  height: 356px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 96px;
+}
+.project__top__content__box {
+  display: flex;
+  width: 503px;
+  padding: 41px 78px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 37px 37px 0px 0px;
+  background: #FFF;
+}
+.project__top__content__box__header {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+.project__top__content__box__text {
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
 }/*# sourceMappingURL=style.css.map */
